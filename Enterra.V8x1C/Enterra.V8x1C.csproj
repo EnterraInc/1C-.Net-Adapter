@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93BDFE45-75C7-41A1-964C-BEE086C5D894}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Enterra.V8x1C</RootNamespace>
+    <AssemblyName>Enterra.V8x1C</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DOM\AccountingRegisterManager.cs" />
+    <Compile Include="DOM\AccountingRegisterSelection.cs" />
+    <Compile Include="DOM\AccountingRegistersManager.cs" />
+    <Compile Include="DOM\AccumulationMovementType.cs" />
+    <Compile Include="DOM\ArrayV8.cs" />
+    <Compile Include="DOM\AutoTimeMode.cs" />
+    <Compile Include="DOM\Catalog\BaseCatalogProperties.cs" />
+    <Compile Include="DOM\DataExchangeParameters.cs" />
+    <Compile Include="DOM\Document\BaseDocumentProperties.cs" />
+    <Compile Include="DOM\BaseObject.cs" />
+    <Compile Include="DOM\BaseObjectProperties.cs" />
+    <Compile Include="DOM\BaseSessionObject.cs" />
+    <Compile Include="DOM\Catalog\CatalogManager.cs" />
+    <Compile Include="DOM\Catalog\CatalogObject.cs" />
+    <Compile Include="DOM\Catalog\CatalogRef.cs" />
+    <Compile Include="DOM\Catalog\CatalogSelection.cs" />
+    <Compile Include="DOM\Catalog\CatalogsManager.cs" />
+    <Compile Include="DOM\AccumulationRegisterManager.cs" />
+    <Compile Include="DOM\AccumulationRegisterSelection.cs" />
+    <Compile Include="DOM\AccumulationRegistersManager.cs" />
+    <Compile Include="DOM\CalculationRegisterManager.cs" />
+    <Compile Include="DOM\CalculationRegisterSelection.cs" />
+    <Compile Include="DOM\CalculationRegistersManager.cs" />
+    <Compile Include="DOM\Document\DocumentPostingMode.cs" />
+    <Compile Include="DOM\Document\DocumentWriteMode.cs" />
+    <Compile Include="DOM\ExchangePlanRef.cs" />
+    <Compile Include="DOM\FixedCollection.cs" />
+    <Compile Include="DOM\PointOfTime.cs" />
+    <Compile Include="DOM\QueryParameterDescription.cs" />
+    <Compile Include="DOM\QueryParametersDescription.cs" />
+    <Compile Include="DOM\Structure.cs" />
+    <Compile Include="DOM\TablePart.cs" />
+    <Compile Include="DOM\TablePartRow.cs" />
+    <Compile Include="Routines\ConnectionType.cs" />
+    <Compile Include="DOM\ConstantManager.cs" />
+    <Compile Include="DOM\ConstantsManager.cs" />
+    <Compile Include="DOM\Document\DocumentJournalManager.cs" />
+    <Compile Include="DOM\Document\DocumentJournalsManager.cs" />
+    <Compile Include="DOM\EnumManager.cs" />
+    <Compile Include="DOM\EnumRef.cs" />
+    <Compile Include="DOM\EnumsManager.cs" />
+    <Compile Include="DOM\InformationRegisterManager.cs" />
+    <Compile Include="DOM\InformationRegisterSelection.cs" />
+    <Compile Include="DOM\InformationRegistersManager.cs" />
+    <Compile Include="Routines\ICacheLoadable.cs" />
+    <Compile Include="Routines\IV8Serializable.cs" />
+    <Compile Include="Routines\IV8XmlSerializable.cs" />
+    <Compile Include="DOM\Metadata\AccountingRegisterMetadata.cs" />
+    <Compile Include="DOM\Metadata\AccumulationRegisterMetadata.cs" />
+    <Compile Include="DOM\Metadata\CalculationRegisterMetadata.cs" />
+    <Compile Include="DOM\Metadata\ConfigurationMetadataObject.cs" />
+    <Compile Include="Routines\ConnectionSettings.cs" />
+    <Compile Include="DOM\Metadata\DateQualifiers.cs" />
+    <Compile Include="DOM\Document\DocumentManager.cs" />
+    <Compile Include="DOM\Document\DocumentObject.cs" />
+    <Compile Include="DOM\Document\DocumentRef.cs" />
+    <Compile Include="DOM\Document\DocumentSelection.cs" />
+    <Compile Include="DOM\Document\DocumentsManager.cs" />
+    <Compile Include="DOM\Metadata\DocumentMetadata.cs" />
+    <Compile Include="DOM\Metadata\EnumMetadata.cs" />
+    <Compile Include="DOM\Metadata\InformationRegisterMetadata.cs" />
+    <Compile Include="DOM\Metadata\MetadataBase.cs" />
+    <Compile Include="DOM\Metadata\MetadataObject.cs" />
+    <Compile Include="DOM\Metadata\MetadataObjectCollection.cs" />
+    <Compile Include="DOM\Metadata\MetadataType.cs" />
+    <Compile Include="DOM\Metadata\NumberQualifiers.cs" />
+    <Compile Include="DOM\Metadata\RegisterMetadataBase.cs" />
+    <Compile Include="DOM\Metadata\StringQualifiers.cs" />
+    <Compile Include="DOM\Metadata\TypeDescription.cs" />
+    <Compile Include="DOM\Metadata\TypeInfo.cs" />
+    <Compile Include="DOM\Query.cs" />
+    <Compile Include="DOM\QueryResult.cs" />
+    <Compile Include="DOM\QueryResultSelection.cs" />
+    <Compile Include="DOM\UUID.cs" />
+    <Compile Include="DOM\Metadata\TypeV8.cs" />
+    <Compile Include="DOM\ValueTable.cs" />
+    <Compile Include="DOM\ValueTableColumn.cs" />
+    <Compile Include="DOM\ValueTableColumnCollection.cs" />
+    <Compile Include="DOM\ValueTableRow.cs" />
+    <Compile Include="DOM\XMLWriter.cs" />
+    <Compile Include="Routines\IObjectRef.cs" />
+    <Compile Include="Routines\ISelection.cs" />
+    <Compile Include="Routines\V8Version.cs" />
+    <Compile Include="Routines\V8Parsing\LexemV8.cs" />
+    <Compile Include="Routines\V8Parsing\LexemV8Parser.cs" />
+    <Compile Include="Routines\V8Parsing\LexemV8Type.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DOM\RussianConsts.cs" />
+    <Compile Include="DOM\Session.cs" />
+    <Compile Include="Routines\V8TypeCodeAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
