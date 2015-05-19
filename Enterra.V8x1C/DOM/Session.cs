@@ -449,6 +449,9 @@ namespace Enterra.V8x1C.DOM
                     case V8Version.V82:
                         progId = "V82.ComConnector";
                         break;
+                    case V8Version.V83:
+                        progId = "V83.ComConnector";
+                        break;
                     default:
                         throw new NotImplementedException();
                 }
