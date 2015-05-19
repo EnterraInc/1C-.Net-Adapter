@@ -25,6 +25,12 @@ namespace Enterra.V8x1C.Routines
         /// 1С:Предприятие 8.2
         /// </summary>
         [System.ComponentModel.DescriptionAttribute("1С:Предприятие 8.2")]
-        V82 = 2
+        V82 = 2,
+
+        /// <summary>
+        /// 1С:Предприятие 8.3
+        /// </summary>
+        [System.ComponentModel.DescriptionAttribute("1С:Предприятие 8.3")]
+        V83 = 3,
     }
 }

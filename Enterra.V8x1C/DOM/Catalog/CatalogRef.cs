@@ -49,6 +49,19 @@ namespace Enterra.V8x1C.DOM
                 PutToCache("Uuid", value);
             }
         }
+
+        /// <summary>
+        /// ПолучитьОбъект (GetObject)
+        /// </summary>
+        /// <returns></returns>
+        public CatalogObject GetObject()
+        {
+            return (CatalogObject)GetProperty(
+                "GetObject",
+                true,
+                ptr => new CatalogObject(this.Session, ObjectTypeName, ptr)
+                );
+        }
         
         /// <summary>
         /// ПолныйКод (FullCode)
